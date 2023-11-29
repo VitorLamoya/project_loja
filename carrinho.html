@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras | Latech</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #cabecalho {
+            width: 100%;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #carrinho {
+            width: 60%;
+            margin-right: 20px;
+        }
+
+        #resumo-carrinho {
+            width: 30%;
+            text-align: right;
+        }
+
+        .item-carrinho {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .item-carrinho img {
+            margin-right: 10px;
+        }
+
+        .remover-item {
+            color: red;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        #resumo-compra {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        #resumo-compra h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #resumo-compra p {
+            margin: 5px 0;
+        }
+
+        #cupom-desconto {
+            margin-top: 10px;
+        }
+
+        #finalizar-compra {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cabecalho">Carrinho de Compras</div>
+
+    <div style="display: flex; justify-content: space-between;">
+        <div id="carrinho"></div>
+    <div id="resumo-compra">
+        <h2>Resumo da Compra</h2>
+        <p>Sub-total: R$ <span id="sub-total">0.00</span></p>
+        <p>Frete: Gratuito</p>
+        <div id="cupom-desconto">
+            <p>Adicionar cupom de desconto:</p>
+            <input type="text" id="cupom-input" placeholder="Digite o cupom">
+            <button onclick="aplicarCupom()">Aplicar</button>
+        </div>
+        <p>Total: R$ <span id="total-com-desconto">0.00</span></p>
+        <button id="finalizar-compra" onclick="finalizarCompra()">FINALIZAR COMPRA</button>
+    </div>
+    
+
+    <!-- Substitua o bloco de script existente por este -->
+
+<script>
+    // Recuperar o carrinho do armazenamento local
+    var carrinhoAtual = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    // Adicionar os itens do carrinho à página
+    carrinhoAtual.forEach(function (item, index) {
+        var itemHTML = "<div class='item-carrinho'>" +
+            "<img src='" + item.imagem + "' width='50px' height='50px'>" +
+            "<p>" + item.nome + " - " + item.valor + "</p>" +
+            "<span class='remover-item' onclick='removerItem(" + index + ")'>Remover</span>" +
+            "</div>";
+
+        // Adicionar o item ao carrinho na página
+        document.getElementById('carrinho').insertAdjacentHTML('beforeend', itemHTML);
+    });
+
+    // Calcular o sub-total
+    var subTotal = carrinhoAtual.reduce(function (acc, item) {
+        // Converter o valor para float antes de somar
+        var valorFloat = parseFloat(item.valor.replace("R$ ", "").replace(",", ""));
+        return acc + valorFloat;
+    }, 0);
+
+    // Adicionar o sub-total à página
+    document.getElementById('sub-total').innerText = subTotal.toFixed(2);
+
+    // Adicionar o total à página
+    document.getElementById('total').innerText = "Total: R$ " + subTotal.toFixed(2);
+
+    // Função para remover um item do carrinho
+    function removerItem(index) {
+        carrinhoAtual.splice(index, 1);
+        localStorage.setItem("carrinho", JSON.stringify(carrinhoAtual));
+        window.location.reload(); // Recarregar a página para refletir as alterações
+    }
+
+    // Função para aplicar um cupom de desconto
+    function aplicarCupom() {
+        var cupomInput = document.getElementById('cupom-input').value;
+
+        // Verificar se o cupom é CUPON25
+        if (cupomInput === 'CUPON25') {
+            // Aplicar desconto de R$ 300
+            var totalComDesconto = subTotal - 300.00;
+            document.getElementById('total-com-desconto').innerText = totalComDesconto.toFixed(2);
+        } else {
+            // Caso o cupom seja diferente, manter o total sem desconto
+            document.getElementById('total-com-desconto').innerText = subTotal.toFixed(2);
+        }
+    }
+
+    // Função para finalizar a compra (simulada)
+    function finalizarCompra() {
+        alert("Compra finalizada! Obrigado por escolher a Latech.CO!");
+        // Lógica adicional para processar a compra no backend, etc.
+        // ...
+
+        // Redirecionar para a página inicial após a compra
+        window.location.href = "index.html";
+    }
+</script>
+
+</body>
+
+</html>

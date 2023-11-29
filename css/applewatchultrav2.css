@@ -1,0 +1,457 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px; 
+    background-color: #FAF7F2;
+}
+
+.ante-menu {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: black;
+}
+.ante-menu p {padding-top: 5px;font-size: 14px;color: white;}
+.ante-menu span {border-bottom: 1px solid white;}
+
+.topo-menu {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    display: flex;
+    border-bottom: 1px solid #EDEDED;
+    background-color: rgb(255, 255, 255);
+}
+.topo-menu h1 {
+    padding-top: 20px;
+    margin-left: 100px;
+    color: rgb(0, 0, 0);
+    font-family: 'Archivo', sans-serif;
+    font-size: 36px;
+}
+.latech-logo a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: none;
+}
+.latech-logo {
+    width: 22%;
+}
+
+.menu-topo {
+    width: 25%;
+    height: 60px;
+    display: flex;
+    padding-top: 30px;
+}
+.menu-topo h2 {margin-inline: 10px;font-size: 16px;color: #575757;}
+a {text-decoration: none;}
+a:hover {
+    text-shadow: 0 4px 10px #a5a5a5;
+}
+
+.busca-produtos {
+    width: 32%;
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+}
+.busca-produtos input {
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background-color: #F0F0F0;
+}
+.button-input {
+    width: 10%;
+    height: 40px;
+    padding-top: 5px;
+    cursor: pointer;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: black;
+}
+.final-topo-menu {
+    width: 21%;
+    display: flex;
+}
+.txt-final-topo-menu {width: 50%;height: 100%;padding-top: 30px;padding-left: 10px;display: flex;}
+.txt-final-topo-menu h2 {margin-inline: 4px;font-size: 16px;color: #363636;}
+.icon-final-topo-menu {width: 50%;height: 100%;padding-top: 25px;display: flex;}
+.notif-icon {width: 18px;height: 18px;margin-left: -15px;margin-top: -5px;text-align: center;border-radius: 32px;background-color: #2AF598;}
+.notif-icon p {margin-top: 2px;font-size: 13px;}
+
+.nav-menu {
+    width: 100%;
+    height: 70px;
+    background-color: #1C1C1C;
+}
+
+.nav {
+    width: 52.5%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #757575;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+.nav1 {
+  width: 50px;
+  height: 60px;
+  margin: 0 auto;
+  display: none;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+.nav__menu {
+    height: 45px;
+    display: flex;
+    padding-top: 20px;
+    text-align: center;
+    list-style:none;
+}
+    
+.nav__menu li {
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-inline: 0;
+    color: #ffffff;
+    cursor:pointer;
+}
+    
+.nav__menu li a {
+    text-decoration:none; padding:5px 10px; display:block;
+    color: #ffffff;
+}
+    
+.nav__menu-item {
+    display: inline-block;
+    position: relative;
+}
+.nav__menu-item1 {
+    display: none;
+}
+
+.nav__menu li  ul{
+    margin-top: 70px;
+    position:absolute;
+    top: 19px;
+    right: 0;
+    float: right;
+    display:none;
+}
+.nav__menu li:hover ul, .nav__menu li.over ul{display:block;}
+.nav__menu li ul li{
+    width:120px;
+    display:block;
+    color: #171717;
+    background-color: #ffffff;
+    border:1px solid #c0c0c0;
+}
+
+.bode {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.classif-item {
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+}
+.classif-item span {font-size: 14px;color: #949494;}
+.cont-ainer-item {
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    display: flex;
+    border-top-left-radius: 24px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.img-cont-ainer-block {width: 10%;height: 100%;display: inline-block;}
+.img-cont-ainer-block-item {width: 140px;height: 27%;border-radius: 16px;background-color: #D9D9D9;}
+.img-cont-ainer {
+    width: 30%;
+    height: 85%;
+    margin-left: 30px;
+    text-align: center;
+    border-radius: 24px;
+    background-color: #D9D9D9;
+}
+.img-cont-ainer-img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 16px;
+    background-image: url("../imagens/applewatchv4branco.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.txt-cont-ainer {
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.item-txt-cont-ainer {
+    width: 70%;
+    height: 80px;
+    margin: 0 auto;
+    text-align: left;
+}
+.item-txt-cont-ainer h2 {font-family: 'Archivo Black';font-weight: 600;font-size: 22px;}
+.item-txt-cont-ainer h3 {font-weight: 300;font-size: 16px;color: #979797;;}
+.item-txt-cont-ainer span {
+    background: linear-gradient(to right, #FFE81E 50%,#ebebeb 50%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+.price-item-txt-cont-ainer {
+    width: 70%;
+    height: 40px;
+    display: flex;
+    margin: 0 auto;
+    text-align: left;
+}
+.descont-price-item {width: 40px;height: 25px;margin-top: 3px;margin-left: 10px;color:red;border-radius: 32px;background-color: #FFCBCB;}
+.price-item-txt-cont-ainer h2 {font-family: 'Archivo Black';font-size: 20px;font-weight: 400;color: #2ea119;}
+.price-item-txt-cont-ainer h3 {font-size: 14px;color: #979797;}
+.item-txt-cont-ainer button {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-inline: 3px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0 1px 1px #616161;
+    border: none;
+    border-radius: 32px;
+}
+#but1 {width: 140px;height: 45px;background-color: #D9D9D9;}
+#but2 {width: 240px;height: 45px;margin-left:20px;background-color: black;}
+.reviews-product {
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+}
+.reviews-product h2 {font-family: 'Archivo Black';font-size: 20px;}
+.reviews-product span {font-family: 'Archivo';font-size: 18px;color: #878787;}
+.cont-ainer-item-reviews {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.item-reviews-product {
+    width: 47%;
+    height: 180px;
+    margin-inline: 1%;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px #cecdcd;
+}
+.item-reviews-product:hover {transform: scale(1.01);}
+.item-reviews-product span {font-size: 14px;color: #FFE81E;}
+.item-reviews-product h2 {margin-top: 10px;font-size: 18px;}
+.item-reviews-product p {margin-top: 5px;font-size: 14px;color: #7a7a7a;}
+
+.voce-pode-gostar {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+.voce-pode-gostar h2 {font-family: 'Archivo Black';font-size: 22px;}
+.cont-ainer-voce-pode-gostar {
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+}
+.cont-ainer-voce-pode-gostar-item {
+    width: 20%;
+    height: 100%;
+    margin-inline: 3%;
+    text-align: left;
+}
+.cont-ainer-voce-pode-gostar-item a {text-decoration: none;}
+.cont-ainer-voce-pode-gostar h2 {margin-top: 10px;font-size: 14px;color: black;}
+.cont-ainer-voce-pode-gostar h3 {margin-top: 10px;font-size: 18px;color: black;}
+.img-cont-ainer-voce-pode-gostar {
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #D9D9D9;
+}
+.img-cont-ainer-voce-pode-gostar img {margin: 0 auto;}
+.txt-cont-ainer-voce-pode-gostar {padding-left: 10px;}
+
+.ante-footer {
+    width: 80%;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.container-ante-footer {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 25px;
+    display: inline-block;
+    border-radius: 22px;
+    background-color: #000000;
+}
+.container-ante-footer-division {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.txt-division-ante-footer {
+    width: 60%;
+    height: 100%;
+}
+.txt-division-ante-footer h2 {width: 80%;padding-top: 30px;font-family: 'Archivo Black';color: white;}
+.button-division-ante-footer {
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.button-division-ante-footer input {
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 16px;
+    background-color: #D9D9D9;
+}
+.button-division-ante-footer input::placeholder {color: #686868;}
+.button-division-ante-footer .input-inscreverse {
+    width: 80%;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 16px;
+    background-color: white;
+} 
+footer {
+    width: 100%;
+    height: 340px;
+    background-color: #F0F0F0;
+}
+.section-footer {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.container-footer {
+    width: 25%;
+    margin: 0 auto;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+}
+.container-footer h2 {color: #282828;font-size: 18px;}
+.container-footer h1 {font-family: 'Archivo Black';font-size: 32px;margin-top: 35px;}
+.container-footer p {color: #636363;font-size: 15px;margin-top: 8px;}
+.img-container-footer {
+    width: 90%;
+    display: inline-block;
+    cursor: pointer;
+}
+.img-container-footer img {
+    width: 65px;
+    height: 45px;
+    margin-top: 8px;
+}
+.img-container-footer img:hover {transform: scale(1.02);}
+.final-footer {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    background-color: #545454;
+}
+.container-final-footer {
+    width: 50%;
+    margin: 0 auto;
+    text-align: right;
+    margin-right: 40px;
+}
+.container-final-footer img {width: 70px;height: 50px;cursor:pointer;}
+.container-final-footer .logo-footer img{width: 120px;height: 40px;}
+.container-final-footer img:hover {transform: scale(1.02);}
+
+@media screen and (max-width: 480px) {
+    .ante-menu p {width: 90%;padding-top: 0;font-size: 12px;}
+    .topo-menu h1 {margin-left: 15px;padding-top: 25px;font-size: 26px;}
+    .menu-topo {display: none;}
+    .busca-produtos {display: none;}
+    .txt-final-topo-menu {display: none;}
+    .latech-logo {width: 55%;}
+    .final-topo-menu {width: 15%;margin-left: 20px;}
+    .nav1 {width: 12%;}
+    .nav {display: none;}
+    .nav1 {display: inline-block;}
+    .nav-menu {height: 10px;}
+    .nav__menu-item{display: none;}
+    .nav__menu-item1 {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 99px;
+    background-color: #9a9a9a;
+    }
+    .nav__menu li {margin-left: 0;height: 33px;}
+    .nav__menu li  ul {top: 60px;}
+    .nav__menu li a {color: #171717;}
+    .nav__submenu {width: 180px;margin-top: 60px;}
+    .cont-ainer-item {height: 760px;display: inline-block;}
+    .img-cont-ainer {width: 70%;height:260px;margin: 0 auto;}
+    .txt-cont-ainer {width: 100%;text-align: center;}
+    .item-txt-cont-ainer h2 {font-size: 18px;}
+    #but1 {width: 100px;}
+    #but2 {width: 140px;}
+    .price-item-txt-cont-ainer {width:100%;font-size: 14px;}
+    #pri1 {margin-top: 20px;}
+    #but-on {width: 100%;height: 90px;}
+    #arm-aze {width: 100%;height: 90px;}
+    #ad-comp-rar {width: 100%;display: flex;}
+    .reviews-product {display: inline-block;}
+    .item-reviews-product {width: 90%;height: 170px;margin-top: 10px;}
+    .item-reviews-product p {font-size: 12px;}
+    .ante-footer {width: 100%;height: 400px;display: inline-block;}
+    .container-ante-footer {width: 100%;display: inline-block;}
+    .container-ante-footer-img {display: none;}
+    .container-ante-footer-txt {width: 100%;margin: 0;padding-left: 10px;}
+    .container-ante-footer-txt h1 {width: 90%;}
+    .container-ante-footer-txt p {width: 90%;font-size: 14px;}
+    .container-ante-footer input {width: 130px;height: 40px;}
+    .container-ante-footer button {margin-top: 20px;}
+    footer {height: 100%;}
+    .section-footer {display: inline-block;width: 100%;}
+    .container-footer {width: 100%;text-align: center;margin: 0 auto;}
+    .img-container-footer {width: 100%;display: inline-block;}
+    .container-final-footer img {width: 35px;height: 40px;margin-top: 6px;}
+    .container-final-footer .logo-footer img{width: 80px;height: 40px;}
+}

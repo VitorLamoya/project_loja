@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/sobrenos.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Jockey One' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/archivo" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lacquer' rel='stylesheet'>
+    <title>Sobre | Latech</title>
+</head>
+<body>
+    <div class="ante-menu">
+        <p>Cadastre-se e ganhe 20% off na sua primeira compra. <a href="registro.html" style="color: white;"><span>Cadastre-se Aqui!</span></a></p>
+    </div>
+    <div class="topo-menu">
+        <div class="latech-logo">
+            <h1><a href="index.html">LATECH.CO</a></h1>
+        </div>
+        <div class="menu-topo">
+            <a href="celulares.html"><h2>Smartphones</h2></a>
+            <a href="smartwatches.html"><h2>Smartwatches</h2></a>
+            <a href="acessorios.html"><h2>Acessórios</h2></a>
+        </div>
+        <div class="busca-produtos">
+            <input type="text" placeholder="Digite o produto, marca ou modelo">
+            <div class="button-input"><span>🔍</span></div>
+        </div>
+        <div class="final-topo-menu">
+            <div class="txt-final-topo-menu">
+                <div class="item-txt-final-topo-menu"><a href="login.html"><h2>Login</h2></a></div>
+                <div class="item-txt-final-topo-menu"><h2>|</h2></div>
+                <div class="item-txt-final-topo-menu"><a href="registro.html"><h2>Registro</h2></a></div>
+            </div>
+            <div class="icon-final-topo-menu">
+                <img src="imagens/cart_icon_160296.png" width="25px" height="25px">
+                <div class="notif-icon"><p>0</p></div>
+            </div>
+        </div>
+        <div class="nav1">
+            <nav class="nav__menu">
+                <li class="nav__menu-item1"><a style="color: black;">☰</a>
+                    <ul class="nav__submenu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="celulares.html">Celulares</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="login.html" class="notranslate" translate="no">Login</a></li>
+                    </ul>
+                </li>
+            </nav>
+        </div>
+    </div>
+    <div class="bode">
+        <div class="sobrenos-1"></div>
+        <div class="sobrenos-2"></div>
+        <div class="sobrenos-3"></div>
+        <div class="sobrenos-4"></div>
+        <div class="sobrenos-5"></div>
+    </div>
+    <footer>
+        <div class="section-footer">
+            <div class="container-footer" style="padding-top: 0;">
+                <h1>LATECH.CO</h1>
+                <p style="margin-top: 20px;">Visamos propagar o acesso à informação por todo o Brasil.</p>
+            </div>
+            <div class="container-footer">
+                <h2>Departamentos</h2>
+                <a href="celulares.html"><p style="margin-top: 15px;">Smartphones</p></a>
+                <a href="smartwatches.html"><p>Smartwatches</p></a>
+                <a href="acessorios.html"><p>Acessórios</p></a>
+                <a href="fones.html"><p>Fones de ouvido</p></a>
+            </div>
+            <div class="container-footer">
+                <h2>Sobre nós</h2>
+                <a href="sobrenos.html"><p style="margin-top: 15px;">Quem somos</p></a>
+                <a href="sobrenos.html"><p>Localização</p></a>
+                <a href="sobrenos.html"><p>Nossas lojas</p></a>
+                <a href="sobrenos.html"><p>Trabalhe conosco</p></a>
+            </div>
+            <div class="container-footer">
+                <h2>Atendimento</h2>
+                <p style="margin-top: 15px;">4002-8922</p>
+                <p>(21) 97707-6044</p>
+                <p>faleconosco@latech.com.br</p>
+                <p>Horário de atendimento: de<br>segunda à sexta, de 09h às 18h</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    function validarFormulario(){
+        var nomePessoa = document.forms["formCadastro"]["email"].value;
+        if (nomePessoa == "") {
+            alert("Favor informar o seu E-mail!");
+            return false;     
+        }
+        else{
+            alert("Convite enviado para: " + nomePessoa + " !");
+            return true;
+        }
+        }
+    function mFuncao() {
+        var x =
+            document.getElementById("but");
+            x.innerHTML="CUPOM25";
+        }
+
+</script>
+</body>
+</html>

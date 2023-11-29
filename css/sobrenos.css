@@ -1,0 +1,248 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px; 
+    background-color: #FAF7F2;
+}
+
+.ante-menu {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: black;
+}
+.ante-menu p {padding-top: 5px;font-size: 14px;color: white;}
+.ante-menu span {border-bottom: 1px solid white;}
+
+.topo-menu {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    display: flex;
+    border-bottom: 3px solid #e2e1e1;
+    background-color: rgb(255, 255, 255);
+}
+.topo-menu h1 {
+    padding-top: 20px;
+    margin-left: 100px;
+    color: rgb(0, 0, 0);
+    font-family: 'Archivo', sans-serif;
+    font-size: 36px;
+}
+.latech-logo a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: none;
+}
+.latech-logo {
+    width: 22%;
+}
+
+.menu-topo {
+    width: 25%;
+    height: 60px;
+    display: flex;
+    padding-top: 30px;
+}
+.menu-topo h2 {margin-inline: 10px;font-size: 16px;color: #575757;}
+a {text-decoration: none;}
+a:hover {
+    text-shadow: 0 4px 10px #a5a5a5;
+}
+.busca-produtos {
+    width: 32%;
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+}
+.busca-produtos input {
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background-color: #F0F0F0;
+}
+.button-input {
+    width: 10%;
+    height: 40px;
+    padding-top: 5px;
+    cursor: pointer;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: black;
+}
+.final-topo-menu {
+    width: 21%;
+    display: flex;
+}
+.txt-final-topo-menu {width: 50%;height: 100%;padding-top: 30px;padding-left: 10px;display: flex;}
+.txt-final-topo-menu h2 {margin-inline: 4px;font-size: 16px;color: #363636;}
+.icon-final-topo-menu {width: 50%;height: 100%;padding-top: 25px;display: flex;}
+.notif-icon {width: 18px;height: 18px;margin-left: -15px;margin-top: -5px;text-align: center;border-radius: 32px;background-color: #7ED957;}
+.notif-icon p {margin-top: 2px;font-size: 13px;}
+
+.nav-menu {
+    width: 100%;
+    height: 70px;
+    background-color: #1C1C1C;
+}
+
+.nav {
+    width: 52.5%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: #757575;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+.nav1 {
+  width: 50px;
+  height: 60px;
+  margin: 0 auto;
+  display: none;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+.nav__menu {
+    height: 45px;
+    display: flex;
+    padding-top: 20px;
+    text-align: center;
+    list-style:none;
+}
+    
+.nav__menu li {
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-inline: 0;
+    color: #ffffff;
+    cursor:pointer;
+}
+    
+.nav__menu li a {
+    text-decoration:none; padding:5px 10px; display:block;
+    color: #ffffff;
+}
+    
+.nav__menu-item {
+    display: inline-block;
+    position: relative;
+}
+.nav__menu-item1 {
+    display: none;
+}
+
+.nav__menu li  ul{
+    margin-top: 70px;
+    position:absolute;
+    top: 19px;
+    right: 0;
+    float: right;
+    display:none;
+}
+.nav__menu li:hover ul, .nav__menu li.over ul{display:block;}
+.nav__menu li ul li{
+    width:120px;
+    display:block;
+    color: #171717;
+    background-color: #ffffff;
+    border:1px solid #c0c0c0;
+}
+
+.bode {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.sobrenos-1 {
+    width: 100%;
+    height: 500px;
+    background-image: url("../imagens/1sobrenos.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.sobrenos-2 {
+    width: 100%;
+    height: 500px;
+    background-image: url("../imagens/2sobrenos.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.sobrenos-3 {
+    width: 100%;
+    height: 500px;
+    background-image: url("../imagens/3sobrenos.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.sobrenos-4 {
+    width: 100%;
+    height: 500px;
+    background-image: url("../imagens/4sobrenos.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.sobrenos-5 {
+    width: 100%;
+    height: 380px;
+    background-image: url("../imagens/5sobrenos.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+footer {
+    width: 100%;
+    height: 340px;
+    margin-top: -10px;
+    background-color: #F0F0F0;
+}
+.section-footer {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.container-footer {
+    width: 25%;
+    margin: 0 auto;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+}
+.container-footer h2 {color: #282828;font-size: 18px;}
+.container-footer h1 {font-family: 'Archivo Black';font-size: 32px;margin-top: 35px;}
+.container-footer p {color: #636363;font-size: 15px;margin-top: 8px;}
+.img-container-footer {
+    width: 90%;
+    display: inline-block;
+    cursor: pointer;
+}
+.img-container-footer img {
+    width: 65px;
+    height: 45px;
+    margin-top: 8px;
+}
+.img-container-footer img:hover {transform: scale(1.02);}
+.final-footer {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    background-color: #545454;
+}
+.container-final-footer {
+    width: 50%;
+    margin: 0 auto;
+    text-align: right;
+    margin-right: 40px;
+}
+.container-final-footer img {width: 70px;height: 50px;cursor:pointer;}
+.container-final-footer .logo-footer img{width: 120px;height: 40px;}
+.container-final-footer img:hover {transform: scale(1.02);}
